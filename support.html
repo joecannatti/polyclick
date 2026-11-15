@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Support for Polyclick, a layered metronome for macOS: getting started, keyboard shortcuts, trainers, output devices, troubleshooting and contact.">
+  <title>Polyclick — Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="index.html">Poly<span>click</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Support</h1>
+      <p class="lede">Polyclick is a layered metronome for macOS 26 and later.</p>
+
+      <h2>Getting started</h2>
+      <ul>
+        <li>Each row is a layer: pick a sound, a subdivision (♩ ♪ 3 ♬ 6) and click steps to cycle Normal → Accent → Ghost → Off. Right-click a step to set a level directly.</li>
+        <li><kbd>Space</kbd> starts and stops. <kbd>T</kbd> taps the tempo. <kbd>↑</kbd>/<kbd>↓</kbd> change the tempo by 1, <kbd>⇧↑</kbd>/<kbd>⇧↓</kbd> by 10. <kbd>R</kbd> resets a speed-trainer drill. <kbd>M</kbd> mutes.</li>
+        <li>Help ▸ Polyclick Help (<kbd>⌘?</kbd>) lists every shortcut.</li>
+      </ul>
+
+      <h2>Speed trainer</h2>
+      <p>Every N bars the tempo changes by the step you set until it reaches the target; then it holds, stops, or loops back to the start tempo.</p>
+
+      <h2>Gap trainer</h2>
+      <p>N audible bars followed by M silent bars, repeating. The beat display keeps running during silent bars.</p>
+
+      <h2>Output device</h2>
+      <p>Settings ▸ Audio lets you send the click to any output device and, on multichannel interfaces, to a specific output pair, without changing the system default. If the device is missing the app falls back to the system default and says so.</p>
+
+      <h2>Sounds</h2>
+      <p>File ▸ Import Sound… accepts WAV, AIFF, CAF, MP3 and M4A up to 60 seconds. Imported sounds are copied into the app's library.</p>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li><strong>No sound:</strong> check Settings ▸ Audio ▸ Output device and the master volume slider in the Extras card; the mute button is <kbd>M</kbd>.</li>
+        <li><strong>"The audio system is not responding":</strong> another app or a misbehaving audio driver has stalled CoreAudio. Click Retry; if that fails, log out and back in or restart the Mac.</li>
+        <li><strong>Flash and click out of sync on Bluetooth speakers:</strong> adjust Settings ▸ Audio ▸ Visual calibration.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Questions, bug reports and feature requests: <a href="mailto:joecannatti@gmail.com?subject=Polyclick%20support">joecannatti@gmail.com</a>. Please include your macOS version and, if it matters, the audio device you are using.</p>
+      </div>
+    </main>
+
+    <footer class="site">
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="index.html">Home</a></p>
+    </footer>
+  </div>
+</body>
+</html>
